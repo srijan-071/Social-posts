@@ -1,0 +1,17 @@
+<html>
+
+<head>
+    <title>Update Email</title>
+</head>
+
+<body>
+    <h1>Update Email for User ID: {{ user.id }}</h1>
+    <form method="post" action="/update_email/{{ user.id }}">
+        <input type="hidden" name="user_id" value="{{ user_id }}">
+        <label for="old_email">{{ user.email }}</label>
+        <input type="email" id="new_email" name="new_email" required><br><br>
+        <input type="submit" value="Update Email">
+    </form>
+</body>
+
+</html>
