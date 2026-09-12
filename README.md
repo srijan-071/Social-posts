@@ -19,3 +19,11 @@ Keep API changes isolated from experiments, document new endpoints, and never co
 ## Local environment
 
 Keep secrets and machine-specific settings outside version control. For local configuration, use environment variables or an untracked `.env` file and provide safe example values in documentation when a new setting is required.
+
+A typical local setup can use placeholder values such as:
+
+```text
+DATABASE_URL=postgresql://user:password@localhost:5432/example_db
+```
+
+Replace the placeholder credentials locally and keep the real values out of Git.
